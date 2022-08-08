@@ -1,0 +1,11 @@
+distance = 2790
+rent = 820
+night_price = 110
+gas_comp = 15.8
+price_gal = 3.89
+dollar = 77.4
+price_road = distance/gas_comp*price_gal*dollar
+print('Стоимость бензина за поездку = ',round((distance/gas_comp*price_gal*dollar),2),'руб')
+print('Сумма потраченная на проживание',round((night_price*6*dollar),2), 'руб')
+print('Сумма потраченная на аренду авто',round((rent*dollar),2), 'руб')
+print ('Общая потраченная сумма',round(((distance/gas_comp*price_gal*dollar)+(night_price*6*dollar)+(rent*dollar)),2),'руб')
